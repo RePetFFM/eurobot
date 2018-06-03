@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Touch Tracker Marker</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+
+	<link href="touchControl.css" rel="stylesheet"> 
+	<style type="text/css">
+	body { margin: 0px; overflow: hidden; }
+	canvas { border: 1px solid black; }
+	</style>
+	<script type="text/javascript" src="jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="magictouch.js"></script>
+	<script type="text/javascript" src="multiTouchController.js"></script>
+	
+</head>
+<body>
+	<div id="webcam" style="width:320; height:100%; margin-left:25%; left:-50%;"></div>
+	<img src="http://littletau:8080/?action=stream" style="width:320; height:100%; margin-left:25%; left:-50%;">
+	<canvas id="canvas" width="100%" height="100%" style="position: absolute; top:0px; left:0px; width: 100%; height: 100%; z-index:100; border-width:0px;"></canvas>
+
+	<button type="button" id="tiltControl" style="position:fixed; width:100px; height:50px; right:0px; bottom:0px; z-index:1000;">Gyro</button>
+</body>
+</html>
